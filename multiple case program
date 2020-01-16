@@ -1,0 +1,48 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int n;
+cout<<"Choose any one of the following to calculate:\n";
+cout<<"1. Area of right angled triangle\n";
+cout<<"2. Area of rectangle \n";
+cout<<"3. Area of circle\n";
+cout<<"Choice: ";
+cin>>n;
+if(n<4)
+{
+switch(n)
+{
+case 1: int b,h,a1;
+	      cout<<"Enter breadth of the triangle: ";
+	      cin>>b;
+	      cout<<"Enter heightof the triangle: ";
+	      cin>>h;
+	        a1=(0.5*b*h);                                       //area of right angled traingle formula 
+	      cout<<"Area of triangle is : "<<a1<<endl;
+	      break;
+
+case 2: int l,g,a2;
+	      cout<<"Enter length of the rectangle: ";
+	      cin>>l;
+	      cout<<"Enter breadth of the rectangle: ";
+	      cin>>g;
+	        a2=(l*g);                                            //area of rectangle
+        cout<<"Area of the rectangle is: "<<a2<<endl;
+	      break;
+
+case 3: int r,a3;
+	      cout<<"Enter the radius of the circle: ";
+	      cin>>r;
+	        a3=(3.14*r*r);                                      //area of circle
+	      cout<<"Area of the circle is: "<<a3<<endl;
+	      break;
+
+}
+}
+else
+cout<<"wrong input\n";
+cout<<"Please press enter to exit.\nThank You\n";
+getch();
+}
