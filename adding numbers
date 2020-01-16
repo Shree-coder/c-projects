@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int a,b,sum;
+ cout<<"Enter any number1= ";
+ cin>>a;
+ cout<<"Enter any number2= ";
+ cin>>b;
+ sum=a+b;
+ cout<<"The summmation of the numbers is= "<<sum<<endl;
+getch();
+}
